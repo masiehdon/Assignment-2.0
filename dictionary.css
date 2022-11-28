@@ -1,0 +1,43 @@
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'header '
+    'dic'
+    'palin'
+    'wList';
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  padding: 25px;
+  background-color: antiquewhite;
+}
+
+.dic-container {
+  grid-area: dic;
+  padding: 25px;
+  background-color: aqua;
+}
+
+#wordlist-container {
+  grid-area: wList;
+  padding: 25px;
+  background-color: rgb(250, 127, 184);
+}
+
+#palindrome-container {
+  grid-area: palin;
+  background-color: beige;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
