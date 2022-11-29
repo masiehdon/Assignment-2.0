@@ -27,22 +27,24 @@ search.addEventListener('click', function () {
 });
 
 /* --------------------------------------------- */
-/* Check if the word is a palindrome */
+/* Receive a word by user promt and check if the word is a palindrome */
 
-let palChecker = document.getElementById('palinCheckerBtn');
 
-palChecker.addEventListener('click', () => {
-  let str = translation.value;
-  let reversed = str.toLowerCase().split('').reverse().join('');
+let palChecker = document.getElementById("palinCheckerBtn");
+
+palChecker.addEventListener("click", () => {
+  let str = prompt("Enter a word.");
+
+  let reversed = str.toLowerCase().split("").reverse().join("");
   if (!str) {
-    alert('Nothing to check');
-  }
-  if (str === true && str === reversed) {
-    alert('Plaindrome');
-  } else if (str !== reversed) {
-    alert('No palindrome');
+    alert("Please enter a word!");
+  } else if (str === reversed) {
+    alert("Plaindrome");
+  } else {
+    alert("No palindrome");
   }
 });
+
 
 /* ----------------------------------------------*/
 
