@@ -19,7 +19,7 @@ let translate = function () {
   let index = eng.indexOf(searchField.value);
 
   eng.indexOf(searchField.value) === -1
-    ? (translation.value = notFound[Math.floor(Math.random() * 4)])
+    ? (translation.value = notFound[Math.floor(Math.random() * notFound.length)])
     : (translation.value = `${kling[index]}`);
 };
 search.addEventListener('click', function () {
