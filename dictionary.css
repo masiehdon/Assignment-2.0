@@ -6,8 +6,8 @@ body {
   grid-template-areas:
     'header '
     'dic'
-    'palin'
-    'wList';
+    'wList'
+    'palin';
 }
 
 header {
