@@ -1,8 +1,8 @@
 Hi Masieh!
 
-Although thwe assignment is not due until Friday, I thoought I would hav a look and you've done a great job!
+Although thwe assignment is not due until Friday, I thoought I would have a look and you've done a great job!
 
-It's alreeady at Goddkänt level, and if you want a V grade theres a few small changes that you can add to the project to meet the requirements.
+It's already at Goddkänt level, and if you want a VG grade there are a few small changes that you can add to the project to meet the requirements.
 
 Please see the points below.
 
