@@ -1,3 +1,5 @@
+"use strict";
+
 /* Dictionary:  english/klingon and an array with output if there is no translation*/
 
 let eng = ["me", "SoH", "country", "fight", "die"];
@@ -73,16 +75,24 @@ addBtn.addEventListener("click", () => {
 /* Check if the word is a palindrome */
 
 let palChecker = document.getElementById("palinCheckerBtn");
+let alertP = document.getElementById("alert");
+
+let validation = function (str) {
+  if (/^[A-Za-z\s]*$/.test(str) === true) return str;
+};
+
+//------------------------------------------------------------------------------------
 
 palChecker.addEventListener("click", () => {
   let str = prompt("Enter a word.");
 
   let reversed = str.toLowerCase().split("").reverse().join("");
-  if (!str) {
-    alert("Please enter a word!");
+
+  if (!str || str !== validation(str)) {
+    alert("Please enter only letters!");
   } else if (str === reversed) {
     alert("Plaindrome");
   } else {
-    alert("No palindrome");
+    alert("No Plaindrome");
   }
 });
